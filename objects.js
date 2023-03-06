@@ -187,3 +187,29 @@ person1.printFullName()
 // person1.name = 4
 
 console.log(`hobby property with in operator returns ${'_hobby' in person1}`)
+
+
+//Getting Object keys and values
+console.log('/////////Getting Object keys and values')
+
+console.log('iteration over the object')
+
+for(let i in person1){
+    console.log(`Property name: ${i}`)
+    console.log(`Property value: ${person1[i]}`)
+}
+
+console.log('Object.keys')
+
+const keysOfObject = Object.keys(person1)
+console.log(keysOfObject)
+
+console.log('Object values')
+
+const valuesOfValues = Object.values(person1)
+console.log(valuesOfValues)
+
+console.log('Object entries')
+const keyValuePairsOfObject = Object.entries(person1)
+
+console.log(keyValuePairsOfObject)
